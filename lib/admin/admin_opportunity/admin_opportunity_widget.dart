@@ -569,6 +569,8 @@ class _AdminOpportunityWidgetState extends State<AdminOpportunityWidget>
                                                                   Expanded(
                                                                     child:
                                                                         Container(
+                                                                      width:
+                                                                          70.0,
                                                                       decoration:
                                                                           BoxDecoration(
                                                                         boxShadow: [
@@ -654,6 +656,8 @@ class _AdminOpportunityWidgetState extends State<AdminOpportunityWidget>
                                                                               'Decline',
                                                                           options:
                                                                               FFButtonOptions(
+                                                                            width:
+                                                                                133.8,
                                                                             height:
                                                                                 32.0,
                                                                             padding: EdgeInsetsDirectional.fromSTEB(
@@ -674,6 +678,7 @@ class _AdminOpportunityWidgetState extends State<AdminOpportunityWidget>
                                                                                     fontStyle: FlutterFlowTheme.of(context).bodySmall.fontStyle,
                                                                                   ),
                                                                                   color: FlutterFlowTheme.of(context).info,
+                                                                                  fontSize: 17.0,
                                                                                   letterSpacing: 0.0,
                                                                                   fontWeight: FontWeight.w600,
                                                                                   fontStyle: FlutterFlowTheme.of(context).bodySmall.fontStyle,

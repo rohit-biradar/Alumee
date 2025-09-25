@@ -784,9 +784,35 @@ class _MentorshipProgramWidgetState extends State<MentorshipProgramWidget>
                                                                     FFButtonWidget(
                                                                   onPressed:
                                                                       () async {
-                                                                    context.pushNamed(
-                                                                        ChatInterfaceWidget
-                                                                            .routeName);
+                                                                    await MentorshipRequestsTable()
+                                                                        .insert({
+                                                                      'mentee_id':
+                                                                          currentUserUid,
+                                                                      'mentor_id':
+                                                                          listViewUserRow
+                                                                              .id,
+                                                                      'status':
+                                                                          'pending',
+                                                                    });
+                                                                    ScaffoldMessenger.of(
+                                                                            context)
+                                                                        .showSnackBar(
+                                                                      SnackBar(
+                                                                        content:
+                                                                            Text(
+                                                                          '\"Your mentorship request has been sent successfully!\"',
+                                                                          style:
+                                                                              TextStyle(
+                                                                            color:
+                                                                                FlutterFlowTheme.of(context).primaryText,
+                                                                          ),
+                                                                        ),
+                                                                        duration:
+                                                                            Duration(milliseconds: 4000),
+                                                                        backgroundColor:
+                                                                            FlutterFlowTheme.of(context).secondary,
+                                                                      ),
+                                                                    );
                                                                   },
                                                                   text:
                                                                       'Request Mentorship',

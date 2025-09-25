@@ -76,7 +76,7 @@ class _AlumniDirectoryFinalWidgetState
             mainAxisSize: MainAxisSize.max,
             children: [
               Text(
-                'Student Directory',
+                'Alumni Directory',
                 style: FlutterFlowTheme.of(context).headlineMedium.override(
                       font: GoogleFonts.interTight(
                         fontWeight: FlutterFlowTheme.of(context)

@@ -268,19 +268,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => AdminAlumniEngagementWidget(),
         ),
         FFRoute(
-          name: AdminanalyticsWidget.routeName,
-          path: AdminanalyticsWidget.routePath,
-          builder: (context, params) => AdminanalyticsWidget(),
-        ),
-        FFRoute(
           name: TimecapsuleWidget.routeName,
           path: TimecapsuleWidget.routePath,
           builder: (context, params) => TimecapsuleWidget(),
-        ),
-        FFRoute(
-          name: AnaWidget.routeName,
-          path: AnaWidget.routePath,
-          builder: (context, params) => AnaWidget(),
         ),
         FFRoute(
           name: YourTimeCapsuleWidget.routeName,
@@ -343,14 +333,9 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
           builder: (context, params) => MentorshipStatusWidget(),
         ),
         FFRoute(
-          name: AdmAnalWidget.routeName,
-          path: AdmAnalWidget.routePath,
-          builder: (context, params) => AdmAnalWidget(),
-        ),
-        FFRoute(
-          name: Admanal2Widget.routeName,
-          path: Admanal2Widget.routePath,
-          builder: (context, params) => Admanal2Widget(),
+          name: AdminAnalyticsWidget.routeName,
+          path: AdminAnalyticsWidget.routePath,
+          builder: (context, params) => AdminAnalyticsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

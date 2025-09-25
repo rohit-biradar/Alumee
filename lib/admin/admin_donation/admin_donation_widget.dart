@@ -280,7 +280,7 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                     ),
                                               ),
                                               Text(
-                                                '\$45,280',
+                                                '₹45,280',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .headlineMedium
@@ -345,7 +345,7 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                     ),
                                               ),
                                               Text(
-                                                '\$8,450',
+                                                '₹8,450',
                                                 style:
                                                     FlutterFlowTheme.of(context)
                                                         .titleLarge
@@ -778,7 +778,7 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                             ),
                                                             Expanded(
                                                               child: Text(
-                                                                '\$250',
+                                                                '₹250',
                                                                 style: FlutterFlowTheme.of(
                                                                         context)
                                                                     .bodyMedium
@@ -1616,32 +1616,111 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                                     .fontStyle,
                                                           ),
                                                     ),
-                                                    Container(
-                                                      decoration:
-                                                          BoxDecoration(),
-                                                      child: Opacity(
-                                                        opacity: 0.8,
-                                                        child: TextFormField(
-                                                          controller: _model
-                                                              .textController3,
-                                                          focusNode: _model
-                                                              .textFieldFocusNode3,
-                                                          autofocus: false,
-                                                          textInputAction:
-                                                              TextInputAction
-                                                                  .next,
-                                                          obscureText: false,
-                                                          decoration:
-                                                              InputDecoration(
-                                                            hintText:
-                                                                'Enter campaign title',
-                                                            hintStyle:
-                                                                FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .override(
-                                                                      font: GoogleFonts
-                                                                          .inter(
+                                                    Material(
+                                                      color: Colors.transparent,
+                                                      elevation: 1.0,
+                                                      shape:
+                                                          RoundedRectangleBorder(
+                                                        borderRadius:
+                                                            BorderRadius.only(
+                                                          bottomLeft:
+                                                              Radius.circular(
+                                                                  30.0),
+                                                          bottomRight:
+                                                              Radius.circular(
+                                                                  30.0),
+                                                          topLeft:
+                                                              Radius.circular(
+                                                                  30.0),
+                                                          topRight:
+                                                              Radius.circular(
+                                                                  30.0),
+                                                        ),
+                                                      ),
+                                                      child: Container(
+                                                        decoration:
+                                                            BoxDecoration(
+                                                          boxShadow: [
+                                                            BoxShadow(
+                                                              blurRadius: 10.0,
+                                                              color: Color(
+                                                                  0x33000000),
+                                                              offset: Offset(
+                                                                0.0,
+                                                                10.0,
+                                                              ),
+                                                              spreadRadius: 3.0,
+                                                            )
+                                                          ],
+                                                          gradient:
+                                                              LinearGradient(
+                                                            colors: [
+                                                              Color(0xA1E0E3E7),
+                                                              Color(0x44FFFFFF)
+                                                            ],
+                                                            stops: [0.0, 1.0],
+                                                            begin:
+                                                                AlignmentDirectional(
+                                                                    0.0, -1.0),
+                                                            end:
+                                                                AlignmentDirectional(
+                                                                    0, 1.0),
+                                                          ),
+                                                          borderRadius:
+                                                              BorderRadius.only(
+                                                            bottomLeft:
+                                                                Radius.circular(
+                                                                    30.0),
+                                                            bottomRight:
+                                                                Radius.circular(
+                                                                    30.0),
+                                                            topLeft:
+                                                                Radius.circular(
+                                                                    30.0),
+                                                            topRight:
+                                                                Radius.circular(
+                                                                    30.0),
+                                                          ),
+                                                          border: Border.all(
+                                                            color: Color(
+                                                                0xFFF0F0F0),
+                                                            width: 1.0,
+                                                          ),
+                                                        ),
+                                                        child: Opacity(
+                                                          opacity: 0.8,
+                                                          child: TextFormField(
+                                                            controller: _model
+                                                                .textController3,
+                                                            focusNode: _model
+                                                                .textFieldFocusNode3,
+                                                            autofocus: false,
+                                                            textInputAction:
+                                                                TextInputAction
+                                                                    .next,
+                                                            obscureText: false,
+                                                            decoration:
+                                                                InputDecoration(
+                                                              hintText:
+                                                                  'Enter campaign title',
+                                                              hintStyle:
+                                                                  FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .bodyMedium
+                                                                      .override(
+                                                                        font: GoogleFonts
+                                                                            .inter(
+                                                                          fontWeight: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontWeight,
+                                                                          fontStyle: FlutterFlowTheme.of(context)
+                                                                              .bodyMedium
+                                                                              .fontStyle,
+                                                                        ),
+                                                                        color: FlutterFlowTheme.of(context)
+                                                                            .secondaryText,
+                                                                        letterSpacing:
+                                                                            0.0,
                                                                         fontWeight: FlutterFlowTheme.of(context)
                                                                             .bodyMedium
                                                                             .fontWeight,
@@ -1649,143 +1728,140 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                                             .bodyMedium
                                                                             .fontStyle,
                                                                       ),
-                                                                      color: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .secondaryText,
-                                                                      letterSpacing:
-                                                                          0.0,
-                                                                      fontWeight: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontWeight,
-                                                                      fontStyle: FlutterFlowTheme.of(
-                                                                              context)
-                                                                          .bodyMedium
-                                                                          .fontStyle,
-                                                                    ),
-                                                            enabledBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide:
-                                                                  BorderSide(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .alternate,
-                                                                width: 1.0,
+                                                              enabledBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide:
+                                                                    BorderSide(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .alternate,
+                                                                  width: 1.0,
+                                                                ),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                ),
                                                               ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .only(
-                                                                bottomLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                bottomRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topRight: Radius
-                                                                    .circular(
-                                                                        30.0),
+                                                              focusedBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide:
+                                                                    BorderSide(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .primary,
+                                                                  width: 1.0,
+                                                                ),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                ),
                                                               ),
+                                                              errorBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide:
+                                                                    BorderSide(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
+                                                                  width: 1.0,
+                                                                ),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                ),
+                                                              ),
+                                                              focusedErrorBorder:
+                                                                  OutlineInputBorder(
+                                                                borderSide:
+                                                                    BorderSide(
+                                                                  color: FlutterFlowTheme.of(
+                                                                          context)
+                                                                      .error,
+                                                                  width: 1.0,
+                                                                ),
+                                                                borderRadius:
+                                                                    BorderRadius
+                                                                        .only(
+                                                                  bottomLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  bottomRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topLeft: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                  topRight: Radius
+                                                                      .circular(
+                                                                          30.0),
+                                                                ),
+                                                              ),
+                                                              filled: true,
+                                                              fillColor: FlutterFlowTheme
+                                                                      .of(context)
+                                                                  .primaryBackground,
+                                                              contentPadding:
+                                                                  EdgeInsetsDirectional
+                                                                      .fromSTEB(
+                                                                          16.0,
+                                                                          12.0,
+                                                                          16.0,
+                                                                          12.0),
                                                             ),
-                                                            focusedBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide:
-                                                                  BorderSide(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .primary,
-                                                                width: 1.0,
-                                                              ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .only(
-                                                                bottomLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                bottomRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                              ),
-                                                            ),
-                                                            errorBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide:
-                                                                  BorderSide(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .error,
-                                                                width: 1.0,
-                                                              ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .only(
-                                                                bottomLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                bottomRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                              ),
-                                                            ),
-                                                            focusedErrorBorder:
-                                                                OutlineInputBorder(
-                                                              borderSide:
-                                                                  BorderSide(
-                                                                color: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .error,
-                                                                width: 1.0,
-                                                              ),
-                                                              borderRadius:
-                                                                  BorderRadius
-                                                                      .only(
-                                                                bottomLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                bottomRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topLeft: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                                topRight: Radius
-                                                                    .circular(
-                                                                        30.0),
-                                                              ),
-                                                            ),
-                                                            filled: true,
-                                                            fillColor: FlutterFlowTheme
+                                                            style: FlutterFlowTheme
                                                                     .of(context)
-                                                                .primaryBackground,
-                                                            contentPadding:
-                                                                EdgeInsetsDirectional
-                                                                    .fromSTEB(
-                                                                        16.0,
-                                                                        12.0,
-                                                                        16.0,
-                                                                        12.0),
-                                                          ),
-                                                          style: FlutterFlowTheme
-                                                                  .of(context)
-                                                              .bodyMedium
-                                                              .override(
-                                                                font:
-                                                                    GoogleFonts
-                                                                        .inter(
+                                                                .bodyMedium
+                                                                .override(
+                                                                  font:
+                                                                      GoogleFonts
+                                                                          .inter(
+                                                                    fontWeight: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontWeight,
+                                                                    fontStyle: FlutterFlowTheme.of(
+                                                                            context)
+                                                                        .bodyMedium
+                                                                        .fontStyle,
+                                                                  ),
+                                                                  letterSpacing:
+                                                                      0.0,
                                                                   fontWeight: FlutterFlowTheme.of(
                                                                           context)
                                                                       .bodyMedium
@@ -1795,25 +1871,15 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                                       .bodyMedium
                                                                       .fontStyle,
                                                                 ),
-                                                                letterSpacing:
-                                                                    0.0,
-                                                                fontWeight: FlutterFlowTheme.of(
+                                                            cursorColor:
+                                                                FlutterFlowTheme.of(
                                                                         context)
-                                                                    .bodyMedium
-                                                                    .fontWeight,
-                                                                fontStyle: FlutterFlowTheme.of(
-                                                                        context)
-                                                                    .bodyMedium
-                                                                    .fontStyle,
-                                                              ),
-                                                          cursorColor:
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .primary,
-                                                          validator: _model
-                                                              .textController3Validator
-                                                              .asValidator(
-                                                                  context),
+                                                                    .primary,
+                                                            validator: _model
+                                                                .textController3Validator
+                                                                .asValidator(
+                                                                    context),
+                                                          ),
                                                         ),
                                                       ),
                                                     ),
@@ -2788,7 +2854,7 @@ class _AdminDonationWidgetState extends State<AdminDonationWidget>
                                                           .fromSTEB(0.0, 0.0,
                                                               0.0, 0.0),
                                                   iconColor: Colors.white,
-                                                  color: Color(0x4639346D),
+                                                  color: Color(0x614B39EF),
                                                   textStyle: FlutterFlowTheme
                                                           .of(context)
                                                       .titleSmall

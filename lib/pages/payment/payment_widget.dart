@@ -187,7 +187,7 @@ class _PaymentWidgetState extends State<PaymentWidget> {
                                     padding: EdgeInsetsDirectional.fromSTEB(
                                         0.0, 8.0, 0.0, 0.0),
                                     child: Text(
-                                      '\$125.00',
+                                      '₹125.00',
                                       style: FlutterFlowTheme.of(context)
                                           .displayMedium
                                           .override(

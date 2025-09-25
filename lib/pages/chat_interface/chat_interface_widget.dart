@@ -130,12 +130,12 @@ class _ChatInterfaceWidgetState extends State<ChatInterfaceWidget> {
 
                     return Container(
                       width: 427.5,
-                      height: 771.44,
+                      height: 771.4,
                       child: Stack(
                         children: [
                           Padding(
                             padding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 20.0, 0.0, 0.0),
+                                0.0, 38.0, 0.0, 0.0),
                             child: Container(
                               width: 427.5,
                               height: 777.5,
@@ -153,7 +153,7 @@ class _ChatInterfaceWidgetState extends State<ChatInterfaceWidget> {
                                             child: Padding(
                                               padding: EdgeInsetsDirectional
                                                   .fromSTEB(
-                                                      0.0, 25.0, 0.0, 0.0),
+                                                      0.0, 20.0, 0.0, 0.0),
                                               child: Container(
                                                 decoration: BoxDecoration(
                                                   gradient: LinearGradient(

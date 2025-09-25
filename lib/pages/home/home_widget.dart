@@ -4,7 +4,7 @@ import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
-import '/temporarypages/a_i_chat_bot_copy/a_i_chat_bot_copy_widget.dart';
+import '/problem_hub/a_i_chat_bot_copy/a_i_chat_bot_copy_widget.dart';
 import '/index.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart'
     as smooth_page_indicator;
@@ -15,10 +15,11 @@ import 'package:google_fonts/google_fonts.dart';
 import 'home_model.dart';
 export 'home_model.dart';
 
-/// Create a homepage with white background.
+/// Create a homepage with white
 ///
-/// Top bar: left hamburger menu, center app title text, right notification
-/// bell. Below, add rounded search bar. First section: Upcoming Events with
+/// notification bell.
+///
+/// Below, add rounded search bar. First section: Upcoming Events with
 /// horizontal scroll cards showing image, title, venue, date. Next: Past
 /// Events with horizontal cards and short summaries. Below that, Gallery with
 /// auto sliding image carousel. Then Reviews section in a carousel that auto
@@ -2785,7 +2786,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             child: Container(
                                               width: double.infinity,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFF8F8F8),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),
@@ -2939,7 +2942,9 @@ class _HomeWidgetState extends State<HomeWidget> {
                                             child: Container(
                                               width: double.infinity,
                                               decoration: BoxDecoration(
-                                                color: Color(0xFFF8F8F8),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .secondaryBackground,
                                                 borderRadius:
                                                     BorderRadius.circular(16.0),
                                               ),

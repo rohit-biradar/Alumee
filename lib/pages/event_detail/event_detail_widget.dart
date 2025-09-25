@@ -395,7 +395,7 @@ class _EventDetailWidgetState extends State<EventDetailWidget>
                             onPressed: () {
                               print('Button pressed ...');
                             },
-                            text: 'Register Now - \$299',
+                            text: 'Register Now - ₹299',
                             options: FFButtonOptions(
                               width: double.infinity,
                               height: 55.95,

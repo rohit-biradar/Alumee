@@ -41,12 +41,9 @@ export '/login_signup_verification/complete_profile/complete_profile_widget.dart
     show CompleteProfileWidget;
 export '/admin/admin_alumni_engagement/admin_alumni_engagement_widget.dart'
     show AdminAlumniEngagementWidget;
-export '/temporarypages/adminanalytics/adminanalytics_widget.dart'
-    show AdminanalyticsWidget;
-export '/temporarypages/timecapsule/timecapsule_widget.dart'
+export '/problem_hub/timecapsule/timecapsule_widget.dart'
     show TimecapsuleWidget;
-export '/temporarypages/ana/ana_widget.dart' show AnaWidget;
-export '/temporarypages/your_time_capsule/your_time_capsule_widget.dart'
+export '/problem_hub/your_time_capsule/your_time_capsule_widget.dart'
     show YourTimeCapsuleWidget;
 export '/admin/student_directory/student_directory_widget.dart'
     show StudentDirectoryWidget;
@@ -54,15 +51,15 @@ export '/admin/alumni_directory_final/alumni_directory_final_widget.dart'
     show AlumniDirectoryFinalWidget;
 export '/pages/engagement_detail/engagement_detail_widget.dart'
     show EngagementDetailWidget;
-export '/temporarypages/std_problm_pagetrial/std_problm_pagetrial_widget.dart'
+export '/problem_hub/std_problm_pagetrial/std_problm_pagetrial_widget.dart'
     show StdProblmPagetrialWidget;
-export '/temporarypages/std_problm_detail_trial/std_problm_detail_trial_widget.dart'
+export '/problem_hub/std_problm_detail_trial/std_problm_detail_trial_widget.dart'
     show StdProblmDetailTrialWidget;
-export '/temporarypages/std_problm_post_trial/std_problm_post_trial_widget.dart'
+export '/problem_hub/std_problm_post_trial/std_problm_post_trial_widget.dart'
     show StdProblmPostTrialWidget;
-export '/stdproblm_post_solu/stdproblm_post_solu_widget.dart'
+export '/problem_hub/stdproblm_post_solu/stdproblm_post_solu_widget.dart'
     show StdproblmPostSoluWidget;
-export '/mentorship_status/mentorship_status_widget.dart'
+export '/problem_hub/mentorship_status/mentorship_status_widget.dart'
     show MentorshipStatusWidget;
-export '/adm_anal/adm_anal_widget.dart' show AdmAnalWidget;
-export '/admanal2/admanal2_widget.dart' show Admanal2Widget;
+export '/admin/admin_analytics/admin_analytics_widget.dart'
+    show AdminAnalyticsWidget;

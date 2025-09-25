@@ -1,9 +1,8 @@
 import '/flutter_flow/flutter_flow_util.dart';
-import '/index.dart';
-import 'donation_widget.dart' show DonationWidget;
+import 'admin_analytics_widget.dart' show AdminAnalyticsWidget;
 import 'package:flutter/material.dart';
 
-class DonationModel extends FlutterFlowModel<DonationWidget> {
+class AdminAnalyticsModel extends FlutterFlowModel<AdminAnalyticsWidget> {
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TabBar widget.

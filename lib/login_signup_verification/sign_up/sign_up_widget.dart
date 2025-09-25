@@ -554,6 +554,7 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                                     .bodyMedium
                                                     .fontStyle,
                                           ),
+                                      maxLength: 11,
                                       validator: _model
                                           .confirmPasswordTextControllerValidator
                                           .asValidator(context),
@@ -598,67 +599,116 @@ class _SignUpWidgetState extends State<SignUpWidget> {
                                     .fontStyle,
                               ),
                         ),
-                        FFButtonWidget(
-                          onPressed: () async {
-                            FFAppState().tempEmail =
-                                _model.emailTextController.text;
-                            FFAppState().tempPassword =
-                                _model.passwordTextController.text;
-                            GoRouter.of(context).prepareAuthEvent();
-                            if (_model.passwordTextController.text !=
-                                _model.confirmPasswordTextController.text) {
-                              ScaffoldMessenger.of(context).showSnackBar(
-                                SnackBar(
-                                  content: Text(
-                                    'Passwords don\'t match!',
-                                  ),
-                                ),
-                              );
-                              return;
-                            }
-
-                            final user =
-                                await authManager.createAccountWithEmail(
-                              context,
-                              _model.emailTextController.text,
-                              _model.passwordTextController.text,
-                            );
-                            if (user == null) {
-                              return;
-                            }
-
-                            context.pushNamedAuth(
-                                AutoLoginPageWidget.routeName, context.mounted);
-                          },
-                          text: 'Agree & Join',
-                          options: FFButtonOptions(
-                            width: double.infinity,
-                            height: 48.0,
-                            padding: EdgeInsets.all(8.0),
-                            iconPadding: EdgeInsetsDirectional.fromSTEB(
-                                0.0, 0.0, 0.0, 0.0),
-                            color: FlutterFlowTheme.of(context).primary,
-                            textStyle: FlutterFlowTheme.of(context)
-                                .titleMedium
-                                .override(
-                                  font: GoogleFonts.interTight(
-                                    fontWeight: FontWeight.w600,
-                                    fontStyle: FlutterFlowTheme.of(context)
-                                        .titleMedium
-                                        .fontStyle,
-                                  ),
-                                  color: Colors.white,
-                                  letterSpacing: 0.0,
-                                  fontWeight: FontWeight.w600,
-                                  fontStyle: FlutterFlowTheme.of(context)
-                                      .titleMedium
-                                      .fontStyle,
-                                ),
-                            elevation: 0.0,
-                            borderSide: BorderSide(
-                              color: Colors.transparent,
+                        Material(
+                          color: Colors.transparent,
+                          elevation: 1.0,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(30.0),
+                              bottomRight: Radius.circular(30.0),
+                              topLeft: Radius.circular(30.0),
+                              topRight: Radius.circular(30.0),
                             ),
-                            borderRadius: BorderRadius.circular(24.0),
+                          ),
+                          child: Container(
+                            decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  blurRadius: 10.0,
+                                  color: Color(0x33000000),
+                                  offset: Offset(
+                                    0.0,
+                                    10.0,
+                                  ),
+                                  spreadRadius: 3.0,
+                                )
+                              ],
+                              gradient: LinearGradient(
+                                colors: [Color(0xA1E0E3E7), Color(0x44FFFFFF)],
+                                stops: [0.0, 1.0],
+                                begin: AlignmentDirectional(0.0, -1.0),
+                                end: AlignmentDirectional(0, 1.0),
+                              ),
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(30.0),
+                                bottomRight: Radius.circular(30.0),
+                                topLeft: Radius.circular(30.0),
+                                topRight: Radius.circular(30.0),
+                              ),
+                              border: Border.all(
+                                color: Color(0xFFF0F0F0),
+                                width: 1.0,
+                              ),
+                            ),
+                            child: FFButtonWidget(
+                              onPressed: () async {
+                                FFAppState().tempEmail =
+                                    _model.emailTextController.text;
+                                FFAppState().tempPassword =
+                                    _model.passwordTextController.text;
+                                GoRouter.of(context).prepareAuthEvent();
+                                if (_model.passwordTextController.text !=
+                                    _model.confirmPasswordTextController.text) {
+                                  ScaffoldMessenger.of(context).showSnackBar(
+                                    SnackBar(
+                                      content: Text(
+                                        'Passwords don\'t match!',
+                                      ),
+                                    ),
+                                  );
+                                  return;
+                                }
+
+                                final user =
+                                    await authManager.createAccountWithEmail(
+                                  context,
+                                  _model.emailTextController.text,
+                                  _model.passwordTextController.text,
+                                );
+                                if (user == null) {
+                                  return;
+                                }
+
+                                context.pushNamedAuth(
+                                    AutoLoginPageWidget.routeName,
+                                    context.mounted);
+                              },
+                              text: 'Agree & Join',
+                              options: FFButtonOptions(
+                                width: double.infinity,
+                                height: 48.0,
+                                padding: EdgeInsets.all(8.0),
+                                iconPadding: EdgeInsetsDirectional.fromSTEB(
+                                    0.0, 0.0, 0.0, 0.0),
+                                color: Color(0x514B39EF),
+                                textStyle: FlutterFlowTheme.of(context)
+                                    .titleMedium
+                                    .override(
+                                      font: GoogleFonts.interTight(
+                                        fontWeight: FontWeight.w600,
+                                        fontStyle: FlutterFlowTheme.of(context)
+                                            .titleMedium
+                                            .fontStyle,
+                                      ),
+                                      color: Colors.white,
+                                      letterSpacing: 0.0,
+                                      fontWeight: FontWeight.w600,
+                                      fontStyle: FlutterFlowTheme.of(context)
+                                          .titleMedium
+                                          .fontStyle,
+                                    ),
+                                elevation: 0.0,
+                                borderSide: BorderSide(
+                                  color: Colors.transparent,
+                                ),
+                                borderRadius: BorderRadius.only(
+                                  bottomLeft: Radius.circular(30.0),
+                                  bottomRight: Radius.circular(30.0),
+                                  topLeft: Radius.circular(30.0),
+                                  topRight: Radius.circular(30.0),
+                                ),
+                              ),
+                            ),
                           ),
                         ),
                       ].divide(SizedBox(height: 16.0)),
