@@ -189,8 +189,20 @@ class _CompleteProfileWidgetState extends State<CompleteProfileWidget> {
                                 FormFieldController<String>(
                               _model.dropDownValue ??= '',
                             ),
-                            options: List<String>.from(['student', 'alumni']),
-                            optionLabels: ['student', 'alumni'],
+                            options: List<String>.from([
+                              'student',
+                              'alumni',
+                              'admin',
+                              'recruiter',
+                              'faculty'
+                            ]),
+                            optionLabels: [
+                              'student',
+                              'alumni',
+                              'admin',
+                              'recruiter',
+                              'faculty'
+                            ],
                             onChanged: (val) =>
                                 safeSetState(() => _model.dropDownValue = val),
                             width: 428.5,
