@@ -72,5 +72,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 Rohit Biradar / nullCommand – [@RohitBiradarLinkedIn](http://linkedin.com/in/rohit-biradar-862a1932b) – rohitop492@gmail.com
 
-Project Link: [https://github.com/your_username/your_repository]([https://github.com/your_username/your_repository](https://github.com/rohit-biradar/Alumee/tree/main))
+Project Link: ([https://github.com/your_username/your_repository](https://github.com/rohit-biradar/Alumee/tree/main))
 ```
